@@ -11,8 +11,8 @@ void main()async{
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
- print('here we go >>>');
-
+ print('here we go u mfs >>>');
+  //hello
   FirebaseFirestore db = FirebaseFirestore.instance;
   await db.collection("users").get().then((event) {   for (var doc in event.docs) {     print(" => ${doc.data()['username']}");   } });
 
